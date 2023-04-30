@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      
+    Hüseyin Aslan
+
+    Github : https://github.com/HsynAslan/timer-js.git 
+    
+  -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="time-box">
+        <div id="time-m">25</div>
+        <div id="ikinokta">:</div>
+        <div id="time-s">00</div>
+      </div>
+      <div class="buttons">
+        <div id="start-button">
+          <button onclick="startButton()" id="idStartButton">Start</button>
+        </div>
+        <div id="stop-button">
+          <button onclick="stopButton()" id="idStopButton">Stop</button>
+        </div>
+        <!-- <div id="pause-resume-button"><button>Pause</button></div> -->
+        <div id="pause-resume-button">
+          <button onclick="pauseResumeFunc()" id="idPauseResumeButton">
+            Pause
+          </button>
+        </div>
+      </div>
+      <div id="change-time">
+        <input
+          type="number"
+          id="getMinute"
+          name="tentacles"
+          min="00"
+          max="59"
+          class="input-ryuk"
+          placeholder="dakika"
+        />
+        <label id="label-ikiNokta">:</label>
+        <input
+          type="number"
+          id="getSecond"
+          name="tentacles"
+          min="00"
+          max="59"
+          class="input-ryuk"
+          placeholder="saniye"
+        />
+        <button
+          onclick="setTimeOnScreen()"
+          id="timeSetButton"
+          class="degistirButton"
+        >
+          Değiştir
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

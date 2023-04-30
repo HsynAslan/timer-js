@@ -1,0 +1,55 @@
+.box {
+  background-color: lavender;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+.time-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  font-size: 7vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0%;
+  margin-top: 10vh;
+}
+.buttons button {
+  width: 10vh;
+  height: 5vh;
+  border-radius: 15px;
+  font-size: xx-large;
+}
+.degistirButton {
+  width: 10vh;
+  height: 5vh;
+  border-radius: 15px;
+  font-size: x-large;
+  margin-left: 4vh;
+  position: absolute;
+  margin-top: 1%;
+}
+
+.input-ryuk {
+  width: 10vh;
+  height: 5vh;
+  font-size: 300%;
+}
+#change-time {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+#label-ikiNokta {
+  font-size: 5vh;
+}
+input::placeholder {
+  font-size: 2vh;
+}
